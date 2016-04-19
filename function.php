@@ -4,7 +4,6 @@
   include($path.'class/PHPTelnet.php');
 
 
-
   function l2s($ap_list){
     #Change lightweight to atand alone
     $command_l2s = file_get_contents('./command/l2s.txt');
@@ -50,12 +49,13 @@
    }
   
  function pingAddress($ip) {
-      $pingresult = exec('/sbin/ping -n 3 '.$ip, $outcome, $status);
-      if (0 == $status) {
-        $status = 1;
-      } else {
-        $status = 0;
-      }
-      return $status;
+    $output = shell_exec('ping -c1 -t1 '.$ip);
+    preg_match_all('/icmp_seq=/',$output,$match);
+    if(count($match[0])==1){
+      return 1;
+    }
+    else {
+      return 0;
+    }
    }
 ?>
