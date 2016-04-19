@@ -12,8 +12,8 @@
         //command_exec($ip, $user, $pass, $command_l2s);
         echo 'Change lightweight to stand alone : '.$ip.PHP_EOL;
     }
-    echo PHP_EOL.'wait 10 munute .....'.PHP_EOL;
-    sleep(10); // 10 second
+    echo PHP_EOL.'wait 10 minute .....'.PHP_EOL;
+    sleep(600); // 10 second
     $command_confs = file_get_contents('./command/confs.txt');
     $command_confs = convert_command($command_confs);
      foreach ($ap_list as $ip) {
