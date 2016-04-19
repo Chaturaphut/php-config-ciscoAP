@@ -1,4 +1,4 @@
-# php-config-ciscoAP
+# Cisco Controller Monitoring 
 
 Cisco Controller monitoring and manage access point via telnet  
 
