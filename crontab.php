@@ -10,7 +10,7 @@
 	file_put_contents($path.'status/cron.pid','1');
 	$check = file_get_contents($path.'status/apStatus.txt');
 	
-	if(pingAddress($ap_host)){
+	if(pingAddress($controller_host)){
 		if($check == '9'){
 			//welcome back AP
 			echo 'Welcome back AP send command Stand Alone to lightweight. '.PHP_EOL;
