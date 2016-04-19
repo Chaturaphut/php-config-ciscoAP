@@ -9,7 +9,7 @@
     $command_l2s = file_get_contents('./command/l2s.txt');
     $command_l2s = convert_command($command_l2s);
     foreach ($ap_list as $ip) {
-        //command_exec($ip, $user, $pass, $command_l2s);
+        command_exec($ip, $user, $pass, $command_l2s);
         echo 'Change lightweight to stand alone : '.$ip.PHP_EOL;
     }
     echo PHP_EOL.'wait 10 minute .....'.PHP_EOL;
@@ -17,7 +17,7 @@
     $command_confs = file_get_contents('./command/confs.txt');
     $command_confs = convert_command($command_confs);
      foreach ($ap_list as $ip) {
-        //command_exec($ip, $user, $pass, $command_confs);
+        command_exec($ip, $user, $pass, $command_confs);
         echo ' send config l2s command to IP :'.$ip.PHP_EOL;
     }
   }
@@ -27,7 +27,7 @@
     $command_s2l = file_get_contents('./command/s2l.txt');
     $command_s2l = convert_command($command_s2l);  
     foreach ($ap_list as $ip) {
-        //command_exec($ip, $user, $pass, $command_s2l);
+        command_exec($ip, $user, $pass, $command_s2l);
         echo 'Change stand alone to lightweight : '.$ip.PHP_EOL;
       }
       echo PHP_EOL;
