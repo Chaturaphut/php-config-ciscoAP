@@ -1,6 +1,6 @@
 # php-config-ciscoAP
 
-Cisco controller monitoring and access point automatic to switch mode
+Cisco Controller monitoring and manage access point via telnet  
 
 <b>feature</b>
 - Controller Monitoring
