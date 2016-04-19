@@ -6,7 +6,7 @@ Cisco Controller monitoring and manage access point via telnet
 - Controller Monitoring
 - switch mode from lightweight to standalone when Controller Down
 - switch mode from standalone to lightweight when Controller Up
-- send command to Access Point
+- send group command to Access Point
 - Web Interface for check status AP and Controller
 
 <b>how to use</b>
