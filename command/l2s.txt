@@ -1,0 +1,19 @@
+enable
+Cisco
+conf t
+dot11 ssid IS-WiFi
+authentication open
+guest-mode
+band-select
+authentication key-management wpa version 2
+wpa-psk ascii ispassword
+exit
+interface dot11Radio 0
+encryption mode ciphers aes-ccm
+ssid IS-WiFi
+no shut
+end
+enable
+Cisco
+conf t
+dot11 ssid IS-WiFi
